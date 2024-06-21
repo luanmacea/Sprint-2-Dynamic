@@ -110,8 +110,6 @@ while True:
                 moveUp = False
             if event.key in (K_DOWN, K_s):
                 moveDown = False
-            if event.key == K_x:
-                player.topleft = (random.randint(0, WINDOWWIDTH - player.width), random.randint(0, WINDOWHEIGHT - player.height))
 
         if event.type == MOUSEBUTTONUP:
             foods.append(pygame.Rect(event.pos[0], event.pos[1], FOODSIZE, FOODSIZE))
@@ -121,10 +119,10 @@ while True:
         foodCounter = 0
         foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH - FOODSIZE), random.randint(0, WINDOWHEIGHT - FOODSIZE), FOODSIZE, FOODSIZE))
 
-    # Draw the white background onto the surface.w
+
     windowSurface.fill(WHITE)
 
-    # Move the player.
+    # Mover o jogador
     if moveDown:
         player.top += MOVESPEED
     if moveUp:
@@ -134,12 +132,12 @@ while True:
     if moveRight:
         player.right += MOVESPEED
 
-    # Wrap around logic
-    if player.left < 6 or player.right > WINDOWWIDTH or player.top < 6 or player.bottom > WINDOWHEIGHT:
+    # Detectar se jogador encostou na borda
+    if player.left < 20 or player.right > WINDOWWIDTH - 20 or player.top < 20 or player.bottom > WINDOWHEIGHT - 20:
         draw_message()
         print("Você encostou na borda!")
 
-    # Wrap around logic for player
+    # Teleportar o jogador para a borda oposta
     if player.left < 3:
         player.right = WINDOWWIDTH - 15
     if player.right > WINDOWWIDTH:
