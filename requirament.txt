@@ -1,13 +1,13 @@
-# requirements.txt
+requirements.txt
 
-# Jogo de Collision Detection em Pygame
+Jogo de Collision Detection em Pygame
 
-# Dependências Python:
+Dependências Python:
 pygame==2.1.2
 
-# Instruções adicionais:
-# Certifique-se de ter o Python instalado (versão recomendada: 3.7+)
-# Instale as dependências usando o pip:
-# pip install -r requirements.txt
-# Execute o jogo com o comando:
-# python collision_detection_game.py
+Instruções adicionais:
+Certifique-se de ter o Python instalado (versão recomendada: 3.7+)
+Instale as dependências usando o pip:
+pip install pygame
+Execute o jogo com o comando:
+python jogo.py

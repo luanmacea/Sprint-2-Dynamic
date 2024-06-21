@@ -1,0 +1,42 @@
+# Relatório de Projeto
+
+## Integrantes do Grupo
+-Guilherme Morais -551981
+-Lorenzo Ferreira - 97318
+-Luan Silveira Macea - 98290
+-Gabriel Doms - 98630
+-Bruno Eduardo - 558303
+
+## Desafios Completados
+
+1. **Boas práticas**: Criar um arquivo `requirements.txt` para permitir a execução do jogo sem necessidade de qualquer instrução adicional.
+    - **Status**: Completo
+    - **Descrição**: Foi criado um arquivo `requirements.txt` contendo todas as dependências necessárias para rodar o jogo.
+
+2. **Pedra**: Desenhar um retângulo que não permite a passagem do jogador.
+    - **Status**: Completo
+    - **Descrição**: Foram desenhados retângulos pretos representando as 'pedras' que bloqueiam a passagem do jogador.
+
+3. **Múltiplas Pedras**: Suporte a múltiplas 'pedras'.
+    - **Status**: Completo
+    - **Descrição**: O jogo suporta múltiplas 'pedras', formando um labirinto no qual o jogador precisa navegar.
+
+4. **Labirinto**: Desenhar um labirinto manualmente com múltiplas 'pedras'.
+    - **Status**: Completo
+    - **Descrição**: Um labirinto foi desenhado manualmente usando retângulos pretos. O jogador começa no centro do tabuleiro e deve atingir a borda para ganhar pontos adicionais.
+
+5. **Contagem de Pontos no Console**: Exibir no console do Windows uma contagem de quantos pontos o jogador fez.
+    - **Status**: Completo
+    - **Descrição**: A pontuação do jogador é exibida no console sempre que ele coleta um quadradinho ou toca na borda da tela.
+
+6. **Pontuação na Tela**: Exibir a pontuação na tela do jogo.
+    - **Status**: Completo
+    - **Descrição**: A pontuação é exibida na tela do jogo, atualizando sempre que o jogador coleta um quadradinho ou toca na borda da tela.
+
+7. **Crescimento do Jogador**: Fazer o jogador crescer ao comer quadradinhos.
+    - **Status**: Completo
+    - **Descrição**: O jogador cresce ao coletar quadradinhos verdes, aumentando de tamanho a cada coleta.
+
+8. **Wrap Around**: Permitir que o jogador que sai da tela à esquerda volte pelo lado direito, e vice-versa, e o mesmo para cima e para baixo.
+    - **Status**: Completo
+    - **Descrição**: Foi implementada a funcionalidade de wrap around, permitindo que o jogador que sai da tela por um lado reapareça no lado oposto.

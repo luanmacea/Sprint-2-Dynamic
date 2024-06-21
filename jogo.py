@@ -26,11 +26,6 @@ foods = [pygame.Rect(random.randint(0, WINDOWWIDTH - FOODSIZE), random.randint(0
 moveLeft = moveRight = moveUp = moveDown = False
 MOVESPEED = 4
 
-stopRight = False
-stopLeft = False
-stopUp = False
-stopDown = False
-
 score = 0
 
 # Set up walls
@@ -86,16 +81,16 @@ while True:
             sys.exit()
         if event.type == KEYDOWN:
             # Change the keyboard variables.
-            if event.key in (K_LEFT, K_a) and not stopLeft:
+            if event.key in (K_LEFT, K_a) :
                 moveRight = False
                 moveLeft = True
-            if event.key in (K_RIGHT, K_d) and not stopRight:
+            if event.key in (K_RIGHT, K_d):
                 moveLeft = False
                 moveRight = True
-            if event.key in (K_UP, K_w) and not stopUp:
+            if event.key in (K_UP, K_w):
                 moveDown = False
                 moveUp = True
-            if event.key in (K_DOWN, K_s) and not stopDown:
+            if event.key in (K_DOWN, K_s):
                 moveUp = False
                 moveDown = True
         if event.type == KEYUP:
@@ -110,9 +105,6 @@ while True:
                 moveUp = False
             if event.key in (K_DOWN, K_s):
                 moveDown = False
-
-        if event.type == MOUSEBUTTONUP:
-            foods.append(pygame.Rect(event.pos[0], event.pos[1], FOODSIZE, FOODSIZE))
 
     foodCounter += 1
     if foodCounter >= NEWFOOD:
